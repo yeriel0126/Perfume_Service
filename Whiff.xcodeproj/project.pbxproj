@@ -11,6 +11,11 @@
 		6427D3DF2DE2E4C100080B83 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6427D3DE2DE2E4C100080B83 /* FirebaseCore */; };
 		6427D3E22DE2E4DB00080B83 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 6427D3E12DE2E4DB00080B83 /* GoogleSignIn */; };
 		6427D68E2DE2FFC500080B83 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6427D68D2DE2FFC500080B83 /* GoogleSignInSwift */; };
+		8C0A2D962E2CF42C001240C6 /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = 8C0A2D952E2CF42C001240C6 /* FirebaseAI */; };
+		8C0A2D982E2CF42C001240C6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8C0A2D972E2CF42C001240C6 /* FirebaseAnalytics */; };
+		8C0A2D9A2E2CF42C001240C6 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 8C0A2D992E2CF42C001240C6 /* FirebaseAnalyticsOnDeviceConversion */; };
+		8C0A2D9C2E2CF42C001240C6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 8C0A2D9B2E2CF42C001240C6 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		8C0A2D9E2E2CF42C001240C6 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 8C0A2D9D2E2CF42C001240C6 /* FirebaseAppCheck */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +39,16 @@
 		644DB1832DDC402900170327 /* Whiff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whiff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		644DB1902DDC402A00170327 /* WhiffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		644DB19A2DDC402A00170327 /* WhiffUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiffUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C5F40E52E2D100E00FEBFC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Whiff/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C813FE12E2D0E3F0032FC89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6427D6132DE2F12300080B83 /* Exceptions for "Whiff" folder in "Whiff" target */ = {
+		8C0A2D9F2E2CF4BC001240C6 /* Exceptions for "Whiff" folder in "Whiff" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				App/WhiffApp.swift,
 				Info.plist,
+				WhiffApp.swift,
 			);
 			target = 644DB1822DDC402900170327 /* Whiff */;
 		};
@@ -51,7 +58,7 @@
 		644DB1852DDC402900170327 /* Whiff */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				6427D6132DE2F12300080B83 /* Exceptions for "Whiff" folder in "Whiff" target */,
+				8C0A2D9F2E2CF4BC001240C6 /* Exceptions for "Whiff" folder in "Whiff" target */,
 			);
 			path = Whiff;
 			sourceTree = "<group>";
@@ -73,10 +80,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0A2D962E2CF42C001240C6 /* FirebaseAI in Frameworks */,
 				6427D3DF2DE2E4C100080B83 /* FirebaseCore in Frameworks */,
+				8C0A2D982E2CF42C001240C6 /* FirebaseAnalytics in Frameworks */,
+				8C0A2D9A2E2CF42C001240C6 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				6427D3DD2DE2E4C100080B83 /* FirebaseAuth in Frameworks */,
 				6427D3E22DE2E4DB00080B83 /* GoogleSignIn in Frameworks */,
 				6427D68E2DE2FFC500080B83 /* GoogleSignInSwift in Frameworks */,
+				8C0A2D9E2E2CF42C001240C6 /* FirebaseAppCheck in Frameworks */,
+				8C0A2D9C2E2CF42C001240C6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +112,8 @@
 		644DB17A2DDC402900170327 = {
 			isa = PBXGroup;
 			children = (
+				8C5F40E52E2D100E00FEBFC3 /* GoogleService-Info.plist */,
+				8C813FE12E2D0E3F0032FC89 /* Info.plist */,
 				644DB1852DDC402900170327 /* Whiff */,
 				644DB1932DDC402A00170327 /* WhiffTests */,
 				644DB19D2DDC402A00170327 /* WhiffUITests */,
@@ -141,6 +155,11 @@
 				6427D3DE2DE2E4C100080B83 /* FirebaseCore */,
 				6427D3E12DE2E4DB00080B83 /* GoogleSignIn */,
 				6427D68D2DE2FFC500080B83 /* GoogleSignInSwift */,
+				8C0A2D952E2CF42C001240C6 /* FirebaseAI */,
+				8C0A2D972E2CF42C001240C6 /* FirebaseAnalytics */,
+				8C0A2D992E2CF42C001240C6 /* FirebaseAnalyticsOnDeviceConversion */,
+				8C0A2D9B2E2CF42C001240C6 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				8C0A2D9D2E2CF42C001240C6 /* FirebaseAppCheck */,
 			);
 			productName = Whiff;
 			productReference = 644DB1832DDC402900170327 /* Whiff.app */;
@@ -426,14 +445,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9V5WGY4P68;
+				DEVELOPMENT_TEAM = 8BJS54K55Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Whiff/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 12012;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -442,7 +465,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sinhuiyeong.whiffapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whiff.main;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -455,14 +478,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9V5WGY4P68;
+				DEVELOPMENT_TEAM = 8BJS54K55Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Whiff/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = 12012;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -627,6 +654,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6427D3E02DE2E4DB00080B83 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		8C0A2D952E2CF42C001240C6 /* FirebaseAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6427D3DB2DE2E4C100080B83 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAI;
+		};
+		8C0A2D972E2CF42C001240C6 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6427D3DB2DE2E4C100080B83 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		8C0A2D992E2CF42C001240C6 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6427D3DB2DE2E4C100080B83 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		8C0A2D9B2E2CF42C001240C6 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6427D3DB2DE2E4C100080B83 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		8C0A2D9D2E2CF42C001240C6 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6427D3DB2DE2E4C100080B83 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

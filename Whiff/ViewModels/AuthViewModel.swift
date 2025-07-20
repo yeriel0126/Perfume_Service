@@ -336,15 +336,18 @@ class AuthViewModel: ObservableObject {
                 AppleSignInUtils.saveAppleUserInfo(
                     userID: appleIDCredential.user,
                     fullName: fullName,
+    
+                    
                     email: appleIDCredential.email
                 )
             }
             
-            // Firebase 인증 (nonce 없이 진행 - 개발 단계)
-            let credential = OAuthProvider.credential(withProviderID: "apple.com", 
-                                                    idToken: tokenString, 
-                                                    rawNonce: "")
             
+            // Firebase 인증 (nonce 없이 진행 - 개발 단계)
+            let credential = OAuthProvider.credential(providerID: AuthProviderID.apple,
+                                                    idToken: tokenString,
+                                                    rawNonce: "")
+
             print("🔵 Firebase Apple 인증 시도")
             let authResult = try await Auth.auth().signIn(with: credential)
             print("✅ Firebase Apple 인증 성공")
